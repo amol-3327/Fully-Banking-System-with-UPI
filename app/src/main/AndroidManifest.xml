@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.banking">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_noshadow"
+        android:label="My Bank"
+        android:roundIcon="@mipmap/logo_noshadow"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Banking"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".cashier.c_all_accounts"></activity>
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".manager.m_details_new_type" />
+        <activity
+            android:name=".manager.m_loan_types"
+            android:parentActivityName=".manager.m_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".manager.m_profile_change"
+            android:parentActivityName=".manager.m_dashboard" />
+        <activity
+            android:name=".manager.m_new_employee"
+            android:parentActivityName=".manager.m_list_emp_user" />
+        <activity
+            android:name=".manager.m_a_e_details"
+            android:parentActivityName=".manager.m_list_emp_user" />
+        <activity
+            android:name=".manager.m_list_emp_user"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".manager.m_calculate_interest"
+            android:parentActivityName=".manager.m_dashboard" />
+        <activity
+            android:name=".manager.m_finish_details"
+            android:parentActivityName=".manager.m_loan_requests" />
+        <activity
+            android:name=".manager.m_loan_details"
+            android:parentActivityName=".manager.m_loan_requests" />
+        <activity
+            android:name=".manager.m_loan_requests"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".manager.m_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".u_apply_loan"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".cashier.c_profile_change"
+            android:parentActivityName=".cashier.c_dashboard" />
+        <activity
+            android:name=".cashier.c_forgot_pass"
+            android:parentActivityName=".home" />
+        <activity
+            android:name=".cashier.c_deposit_cheque"
+            android:parentActivityName=".cashier.c_dashboard" />
+        <activity
+            android:name=".cashier.c_cheque_details"
+            android:parentActivityName=".cashier.c_manage_cheque" />
+        <activity
+            android:name=".cashier.c_manage_cheque"
+            android:parentActivityName=".cashier.c_dashboard" />
+        <activity
+            android:name=".u_apply_cheque"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".cashier.c_add_card"
+            android:parentActivityName=".cashier.c_dashboard" />
+        <activity
+            android:name=".cashier.c_transfer"
+            android:parentActivityName=".cashier.c_dashboard" />
+        <activity
+            android:name=".cashier.c_deposit"
+            android:parentActivityName=".cashier.c_dashboard" />
+        <activity
+            android:name=".cashier.c_withdraw"
+            android:parentActivityName=".cashier.c_dashboard" />
+        <activity
+            android:name=".cashier.c_new_account"
+            android:parentActivityName=".cashier.c_dashboard" />
+        <activity
+            android:name=".cashier.c_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".u_profile"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".u_tran_details"
+            android:parentActivityName=".u_my_trans" />
+        <activity
+            android:name=".u_my_trans"
+            android:parentActivityName=".manage_upi" />
+        <activity
+            android:name=".u_change_u_pin"
+            android:parentActivityName=".manage_upi" />
+        <activity
+            android:name=".u_forgot_u_pin"
+            android:parentActivityName=".manage_upi" />
+        <activity
+            android:name=".activate_upi"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".manage_upi"
+            android:parentActivityName=".manage_upi" />
+        <activity
+            android:name=".u_scan_qr"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".payment_gateway" />
+        <activity
+            android:name=".u_fund_transfer"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".u_forgot_pin"
+            android:parentActivityName=".home" />
+        <activity
+            android:name=".u_change_l_pin"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".u_new_user"
+            android:parentActivityName=".home" />
+        <activity android:name=".home"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
