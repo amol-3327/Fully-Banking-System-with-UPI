@@ -1,5 +1,6 @@
 # Fully-Banking-System-with-UPI
 This is fully banking system with upi functionality.
+<img src="https://user-images.githubusercontent.com/34601551/128626539-cba1bb01-b436-4e84-8414-556ffebd30a3.jpg" width="200" height="400" />
 ![IMG_20210808_140454](https://user-images.githubusercontent.com/34601551/128626539-cba1bb01-b436-4e84-8414-556ffebd30a3.jpg width="200" height="400")
 ![IMG_20210808_140638](https://user-images.githubusercontent.com/34601551/128626566-a1b80fb3-6a7a-47a5-9367-50e7a1f9f43b.jpg)
 ![IMG_20210808_140653](https://user-images.githubusercontent.com/34601551/128626578-39f63c1e-4176-44d3-965e-3bd093c5d995.jpg)
